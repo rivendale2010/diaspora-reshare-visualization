@@ -11,22 +11,25 @@ header('Content-type: application/json');
 
 
 $url =  empty($_GET['startUrl']) ? null : $_GET['startUrl'] ;
-//$url = 'https://pod.geraspora.de/posts/966741.json';
+$url = $url . ".json" ;
+// $url = 'https://joindiaspora.com/posts/2772581';
 
 if ($url !== null) {
     // create Result Object for DI
     $results = new ResultTree();
-
+// var_dump ( $results ) ;
     // Creating the recursive walker
     $dispatcher = new DiasporaWalker($results, $url, DiasporaWalker::MODE_TOROOT);
+// var_dump ( $results ) ;
     $dispatcher->start();
-
+// var_dump ( $results ) ;
     // return our json-encoded array
     echo $dispatcher->getResults();
-
+// var_dump ( $dispatcher ) ;
 }
 else {
     return json_encode(array('error' => true));
 }
 
 
+?>
