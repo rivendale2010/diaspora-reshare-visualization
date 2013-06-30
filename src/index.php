@@ -37,7 +37,7 @@
         <div  class="container">
             <div class="row">
                 <div class="span6"><h4>Diaspora ReShare Graph (rsv.diapod.net)</h4>
-                    <p>A D3.js powered graphter to follow Diaspora reshares.<br>
+                    <p>A D3.js powered grafter to follow Diaspora reshares.<br>
                        (<strong>Bookmarklet</strong>: <a href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a>
                         )</p></div>
                 <div class="span6">
