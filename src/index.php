@@ -41,10 +41,10 @@
                        (<strong>Bookmarklet</strong>: <a href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a>
                         )</p></div>
                 <div class="span6">
-		
+
 				<form class="form-horizontal" id="searchForm"  >
                     <label for="startUrl" class="">Paste or Drop a Post URL in the box. Share the generated rsv link!</label>
-                    <input  onclick="this.select()" type="text" placeholder="https://pod.geraspora.de/posts/965127" class="span4" id="startUrl" name="startUrl" value="<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : '' ?> "/>
+                    <input  onclick="this.select()" type="text" placeholder="https://pod.geraspora.de/posts/965127" class="span4" id="startUrl" name="startUrl" value="<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?> "/>
 
 					<!-- <script>var textbox = document.getElementById('startUrl'); alert(textbox.value);</script>  -->    
 
