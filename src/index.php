@@ -31,6 +31,8 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
+
+// some really bad hacks, force reload on submit, allow for use of short URL 
  
  <a class="githubForkMeBagde" href="https://github.com/rivendale2010/diaspora-reshare-visualization"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
  <div id="topNav">
@@ -39,17 +41,18 @@
                 <div class="span6"><b>Diaspora ReShare Graph ( rsv.diapod.net )</b>
                     <p>A D3.js powered grafter to follow Diaspora reshares.<br>
                        (<strong>Bookmarklet</strong>: <a href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a>
-                        )</p></div>
+                        )</p>In case of trouble see 
+						<a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" > Diagnostics </a> </div>
                 <div class="span6">
 		
 				<form class="form-horizontal" id="searchForm"  >
                     <label for="startUrl" class="">Paste or drop a post URL in the box. Share the generated link!</label>
-                    <input  onclick="this.select()" type="text" placeholder="https://pod.geraspora.de/posts/965127" class="span4" id="startUrl" name="startUrl" value="<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?> "/>
+                    <input  onclick="this.select()" type="text" placeholder="" class="span4" id="startUrl" name="startUrl" value="<?php echo !empty($_GET['startUrl'])  ? $_GET['startUrl'] : $_SERVER['QUERY_STRING']?> "/>
 
 					<!-- <script>var textbox = document.getElementById('startUrl'); alert(textbox.value);</script>  -->    
 
-		<button type="submit" class="btn" OnClick="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl=' + window.searchForm.startUrl.value; window.searchForm.startUrl.value=''">Start</button>
-		<br><script> document.write( '<a href=http://rsv.diapod.net/?startUrl=' + window.searchForm.startUrl.value + '>http://rsv.diapod.net/?startUrl=' + window.searchForm.startUrl.value + '</a>' );</script>      
+		<button type="submit" class="btn" OnClick="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+window.searchForm.startUrl.value; window.searchForm.startUrl.value=''">Start</button>
+		<br><script> document.write( '<a href=http://rsv.diapod.net/?' + window.searchForm.startUrl.value + '>http://rsv.diapod.net/?' + window.searchForm.startUrl.value + '</a>' );</script>      
         </form>
 				<div id="loader"><img src="img/loader.gif"/></div></div>
             </div>
@@ -66,8 +69,8 @@
 <script src="js/main.js?v=0.0.1"></script>
 
 <?php
-
- if (!empty($_GET['startUrl'])) {
+ echo ($_SERVER['QUERY_STRING']);
+ if (!empty($_SERVER['QUERY_STRING']) & ($_SERVER['QUERY_STRING'] <> "startUrl=" ) & ($_SERVER['QUERY_STRING'] <> "startUrl=startUrl=" ) ) {
 ?>
 
     <script>

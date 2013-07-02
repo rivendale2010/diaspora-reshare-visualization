@@ -79,8 +79,22 @@ class DiasporaWalker
         curl_setopt ( $ch , CURLOPT_SSL_VERIFYHOST, 0 );
 
         $content = curl_exec($ch);
-		print curl_error($ch);	
-        curl_close($ch);
+	//	print curl_error($ch);	
+
+	
+// some added output for any troubles 
+if (curl_error($ch) <> '') {
+print '
+ROOT CAUSE ========>
+';
+print curl_error($ch)
+; 
+print '
+
+ VAR DUMP ========> '
+;
+}
+
 // echo " CURL content is ====>" , $url, $content ; 
         $this->cache[$url] = $content;
 // echo " THIS content is ====>" ; var_dump( $content );	
