@@ -11,6 +11,8 @@ Enjoy the live site at http://rsv.diapod.net
 
 Browser back page and history review do not work, use refresh as needed   
 
+The maxium depth for the recursive walk is set to 7 
+
 Only posts that have detected reshares are visible, if in doubt check the diagnostics 
 
 
