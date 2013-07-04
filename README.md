@@ -9,9 +9,11 @@ https://github.com/rivendale2010/diaspora-reshare-visualization/tree/master
 
 Enjoy the live site at http://rsv.diapod.net    
 
+The information provided is public and the app keeps no record of activity. Our webserver records the usual access logs.  
+
 Browser back page and history review do not work, use refresh as needed   
 
-The maxium depth for the recursive walk is set to 7 
+The maxmium depth for the recursive walk is set to 7 
 
 Only posts that have detected reshares are visible, if in doubt check the diagnostics 
 
