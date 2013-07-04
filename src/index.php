@@ -36,12 +36,11 @@
  <div id="topNav">
         <div class="container">
             <div class="row">
-                <div class="span5">&#9654; Diaspora ReShare Graph <a title="Clear the form." href="http://rsv.diapod.net"><strong>rsv.diapod.net</strong></a>
+                <div class="span5">Diaspora ReShare Graph <a title="Clear the form." href="http://rsv.diapod.net"><strong>rsv.diapod.net</strong></a>
                     <p>A D3.js powered grafter to follow reshares.<br>
                        <strong>Bookmarklet</strong>: <a title="Drop this bookmarklet on your bookmark bar and click it when in the single post view." href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a></p>Also see 
 						<a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" title="Shows a trace of your last request."> Diagnostics</a> and <a title="Checkout the readme on github." href=https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local#diaspora-reshare-visualization->ReadMe
-						</a><p></div>
-                <div class="span5">
+						</a><p></div><div class="span7">
 		
 				<form style="margin-bottom: 0px;" class="form-horizontal" id="searchForm"  >
                     <label for="startUrl" class="">Paste or drop a post URL. Share the link!</label>
