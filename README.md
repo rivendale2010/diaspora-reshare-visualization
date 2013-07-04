@@ -13,7 +13,7 @@ Browser back page and history review may not always work, use refresh as needed.
 
 The maximum depth for the recursive walk is set to seven. 
 
-Only public posts that have  reshares are visible, if in doubt check of sumReshares is zero in the diagnostic.  
+Only public posts that have  reshares are visible, if in doubt check if sumReshares is zero in the diagnostic.  
 
 The search box may not show up if the window is too small to render a graph. Zoom out or resize as needed. 
 
