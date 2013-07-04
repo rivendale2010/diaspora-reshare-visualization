@@ -8,12 +8,11 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-
-
 $url =  empty($_GET['startUrl']) ? null : $_GET['startUrl'] ;
-$url = trim($url . ".json") ;
-// $url = 'https://joindiaspora.com/posts/2772581';
 
+// $url = 'https://joindiaspora.com/posts/2772581';
+if (strpos($url, "/posts/") ===  false | $url === "startUrl=" ) { echo ("=====> $url is Not a valid post URL
+"); $url = null; } else { $url = trim($url . ".json") ; } ;
 if ($url !== null) {
     // create Result Object for DI
     $results = new ResultTree();
