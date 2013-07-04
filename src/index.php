@@ -36,10 +36,9 @@
  <div id="topNav">
         <div class="container">
             <div class="row">
-                <div class="span5"><b>Diaspora ReShare Graph ( rsv.diapod.net )</b>
-                    <p>A D3.js powered grafter to follow Diaspora reshares.<br>
-                       (<strong>Bookmarklet</strong>: <a href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a>
-                        )</p>In case of trouble see 
+                <div class="span5"><b>Diaspora ReShare Graph, rsv.diapod.net</b>
+                    <p>A D3.js powered grafter to follow reshares.<br>
+                       <strong>Bookmarklet</strong>: <a href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a></p>Also see 
 						<a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" > Diagnostics</a> and <a href=https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local#diaspora-reshare-visualization->ReadMe</a></div>
                 <div class="span7">
 		
