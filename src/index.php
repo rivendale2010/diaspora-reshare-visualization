@@ -36,16 +36,17 @@
  <div id="topNav">
         <div class="container">
             <div class="row">
-                <div class="span6"><b>Diaspora ReShare Graph ( rsv.diapod.net )</b>
+                <div class="span5"><b>Diaspora ReShare Graph ( rsv.diapod.net )</b>
                     <p>A D3.js powered grafter to follow Diaspora reshares.<br>
                        (<strong>Bookmarklet</strong>: <a href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a>
                         )</p>In case of trouble see 
 						<a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" > Diagnostics</a> and <a href=https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local#diaspora-reshare-visualization->ReadMe</a></div>
-                <div class="span6">
+                <div class="span7">
 		
 				<form class="form-horizontal" id="searchForm"  >
                     <label for="startUrl" class="">Paste or drop a post URL in the box. Share the generated link!</label>
 <input  onclick="this.select()" type="text" placeholder="" class="span4" id="startUrl" name="startUrl" value="<?php if ($_SERVER['QUERY_STRING'] <> 'startUrl=') { echo trim( !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING']); }; ?>"/>
+
 					<!-- <script>var textbox = document.getElementById('startUrl'); alert(textbox.value);</script>  -->    
 
 		<button type="submit" class="btn" OnClick="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+window.searchForm.startUrl.value; window.searchForm.startUrl.value=''">Start</button>
@@ -57,6 +58,7 @@
  </div>
 
 <div id="mainBox">
+
 
 </div>
 
