@@ -32,18 +32,19 @@
 
 <!-- Add your site or application content here -->
  
- <a class="githubForkMeBagde" href="https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+ <a class="githubForkMeBagde" href="https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local"><img width="132px"   src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
  <div id="topNav">
         <div class="container">
             <div class="row">
-                <div class="span5"><b>Diaspora ReShare Graph, <a title="Clear the form." href="http://rsv.diapod.net">rsv.diapod.net</a></b>
+                <div class="span5">&#9654; Diaspora ReShare Graph <a title="Clear the form." href="http://rsv.diapod.net"><strong>rsv.diapod.net</strong></a>
                     <p>A D3.js powered grafter to follow reshares.<br>
                        <strong>Bookmarklet</strong>: <a title="Drop this bookmarklet on your bookmark bar and click it when in the single post view." href="javascript:window.location.href = 'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void 0;">Diaspora ReShare Graph</a></p>Also see 
-						<a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" title="Shows a trace of your last request."> Diagnostics</a> and <a title="Checkout the readme on github." href=https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local#diaspora-reshare-visualization->ReadMe</a></div>
-                <div class="span7">
+						<a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" title="Shows a trace of your last request."> Diagnostics</a> and <a title="Checkout the readme on github." href=https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local#diaspora-reshare-visualization->ReadMe
+						</a><p></div>
+                <div class="span5">
 		
 				<form style="margin-bottom: 0px;" class="form-horizontal" id="searchForm"  >
-                    <label for="startUrl" class="">Paste or drop a post URL in the box. Share the generated link!</label>
+                    <label for="startUrl" class="">Paste or drop a post URL. Share the link!</label>
 <input  onclick="this.select()" type="text" placeholder="" class="span4" id="startUrl" name="startUrl" value="<?php if ($_SERVER['QUERY_STRING'] <> 'startUrl=') { echo trim( !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING']); }; ?>"/>
 					<!-- <script>var textbox = document.getElementById('startUrl'); alert(textbox.value);</script>  -->    
 
