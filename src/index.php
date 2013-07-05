@@ -28,7 +28,9 @@
     <![endif]-->
     <!-- Add your site or application content here -->
     <a class="githubForkMeBagde" href="https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local">
+
     <img src="img/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
     <div id="topNav" style="padding-left: 0px; padding-right: 0px;">
       <div class="container" style="margin-left: 25px;">
         <div class="row">
