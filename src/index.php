@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css">
     <link rel="stylesheet" href="css/main.css?v=0.0.1" type="text/css">
     <script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <style>
+      a:hover {
+        color: #3CCCFA;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -28,9 +34,7 @@
     <![endif]-->
     <!-- Add your site or application content here -->
     <a class="githubForkMeBagde" href="https://github.com/rivendale2010/diaspora-reshare-visualization/tree/local">
-
     <img src="img/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-
     <div id="topNav" style="padding-left: 0px; padding-right: 0px;">
       <div class="container" style="margin-left: 25px;">
         <div class="row">
