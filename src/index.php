@@ -40,7 +40,7 @@
               A D3.js powered grafter to follow reshares.<br>
               <strong>Bookmarklet</strong>: 
               <a title="Drop this bookmarklet on your bookmark bar and click it when in the single post view." href="javascript:window.location.href%20=%20'http://rsv.diapod.net/?startUrl='+encodeURIComponent(window.location.href);void%200;">Diaspora ReShare Graph</a><br>
-              Also see <a target="_blank" href="/endpoint.php?startUrl=%3C?php%20echo%20!empty($_GET['startUrl'])%20?%20$_GET['startUrl']%20:%20$_SERVER['QUERY_STRING']%20?%3E" title="Shows a trace of your last request.">Diagnostics</a> and 
+              Also see <a target="_blank" href="/endpoint.php?startUrl=<?php echo !empty($_GET['startUrl']) ? $_GET['startUrl'] : $_SERVER['QUERY_STRING'] ?>" title="Shows a trace of your last request.">Diagnostics</a> and 
             <a title="Checkout the readme on github." target="_blank" href="https://github.com/rivendale2010/diaspora-reshare-visualization#diaspora-reshare-visualization-">ReadMe</a>
             </p>
             <p>
