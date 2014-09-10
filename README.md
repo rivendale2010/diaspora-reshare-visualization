@@ -15,7 +15,7 @@ The maximum depth for the recursive walk is set to seven.
 
 Only public posts that have  reshares are visible, if in doubt check if sumReshares is zero in the diagnostic.  
 
-The search box may not show up if the window is too small to render a graph. Zoom out or resize as needed. 
+The search box may not show up if the window is too small to render a graph. Zoom out or resize as needed, then resubmit. 
 
 The app keeps no record of activity. Our web server records the usual access logs.  
 
