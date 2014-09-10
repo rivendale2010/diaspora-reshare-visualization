@@ -7,7 +7,7 @@ Enjoy the live site at [rsv.diapod.net](http://rsv.diapod.net). Past a URL like 
 
 To use the bookmarklet in Chrome or Firefox drag it to your bookmarks bar. Click it when inside the single post view.   
 
-The center mouse button may be used to move nodes and shape the graph. Left button to view the post. 
+The right mouse button may be used to move nodes and shape the graph. Left button to view the post. 
 
 Browser back page and history review may not always work, use refresh as needed.   
 
